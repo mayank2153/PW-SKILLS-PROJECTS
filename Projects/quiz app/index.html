@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="index.js"></script>
+</head>
+<body >
+    <div class="flex flex-col  items-center border-2 w-[600px]  border-yellow-900 ml-[30%] mt-20 gap-5 h-[400px]">
+        <h1 class="font-bold text-5xl bg-slate-900 text-white p-6 ">QUIZ APP</h1>
+        <div class="board ">
+            <div class="question">
+                <p id="que" class="text-xl mb-4"></p>
+            </div>
+            <div class="options flex flex-col gap-2" >
+                    <div >1.
+                        <button class="cursor-pointer border-2 px-4 btn" >
+                            <p id="option1"></p>
+                        </button>
+                    </div>
+                    <div>2.
+                        <button class="cursor-pointer border-2 px-4 btn" id="option2" >
+                        </button>
+                    </div>
+                    
+                    <div>3.
+                        <button class="cursor-pointer border-2 px-4 btn" id="option3"></button>
+                    </div>
+                    
+                    <div>4.
+                        <button class="cursor-pointer border-2 px-4 btn" id="option4"><p ></p></button>
+                    </div>
+                    
+
+            </div>
+        </div>
+        <div id="output">
+
+        </div>
+        <button id="nxtBtn">NEXT</button>
+    </div>
+    
+</body>
+</html>

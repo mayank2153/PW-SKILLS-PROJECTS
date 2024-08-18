@@ -108,7 +108,7 @@ Ans.
     b. Sign-in form should have fields for email and password.
     Ans.
         Sign Up
-    ```html
+```html
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -123,7 +123,7 @@ Ans.
                 let password = document.forms["signUpForm"]["password"].value;
                 let confirmPassword = document.forms["signUpForm"]["confirmPassword"].value;
                 let age = document.forms["signUpForm"]["age"].value;
-    
+
                 if (firstName.length < 3 || lastName.length < 3) {
                     alert("First name and last name must be at least 3 characters long.");
                     return false;
@@ -149,36 +149,74 @@ Ans.
         <form name="signUpForm" onsubmit="return validateSignUpForm()">
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName" required><br><br>
-            
+
             <label for="lastName">Last Name:</label>
             <input type="text" id="lastName" name="lastName" required><br><br>
-            
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
-            
+
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required><br><br>
-            
+
             <label for="confirmPassword">Confirm Password:</label>
             <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
-            
+
             <label for="age">Age:</label>
             <input type="number" id="age" name="age" required><br><br>
-            
+
             <label for="gender">Gender:</label>
             <select id="gender" name="gender" required>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="other">Other</option>
             </select><br><br>
-            
+
             <input type="checkbox" id="terms" name="terms" required>
             <label for="terms">I agree to the terms and conditions</label><br><br>
-            
+
             <input type="submit" value="Sign Up">
         </form>
     </body>
 </html>
+```
 
+    Sign in 
+```html
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign In</title>
+        <script>
+            function validateSignInForm() {
+                let email = document.forms["signInForm"]["email"].value;
+                let password = document.forms["signInForm"]["password"].value;
 
+                if (!email.includes("@")) {
+                    alert("Please enter a valid email address.");
+                    return false;
+                }
+                if (password.length < 6) {
+                    alert("Password must be at least 6 characters long.");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Sign In</h2>
+        <form name="signInForm" onsubmit="return validateSignInForm()">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="submit" value="Sign In">
+        </form>
+    </body>
+    </html>
     ```

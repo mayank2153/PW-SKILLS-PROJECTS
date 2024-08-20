@@ -1,6 +1,6 @@
 1. Create a Navigation Bar Similar to the Below-Mentioned Image
 Solution:
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,11 +40,11 @@ Solution:
 
 </body>
 </html>
-
+```
 
 2. Create a Div Centered with an Image and Paragraph Similar to the Image Mentioned
 Solution:
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,14 +88,14 @@ Solution:
 
 </body>
 </html>
-
+```
 
 
 3. Create a Navigation Bar Similar to Question 1, Using a Different Border Style for Each Navigation Item
 Solution:
 
 HTML and CSS Code:
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -157,9 +157,10 @@ HTML and CSS Code:
 </html>
 4. Create a Simple Webpage with an Image and Make the Image Circular Using Border-Radius
 Solution:
-
-HTML and CSS Code:
-
+```
+4. Create a Simple Webpage with an Image and Make the Image Circular Using Border-Radius       
+Solution:
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -186,220 +187,13 @@ HTML and CSS Code:
 
 </body>
 </html>
+```
 
-Here are the solutions to the assignment questions based on the image you provided:
 
-1. Create a Navigation Bar Similar to the Below-Mentioned Image
-Solution:
-
-HTML and CSS Code:
-
-html
-Copy code
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .navbar {
-            background-color: #4CAF50;
-            overflow: hidden;
-        }
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-    </style>
-</head>
-<body>
-
-<div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact</a>
-    <a href="#blog">Blog</a>
-    <a href="#login">Login</a>
-</div>
-
-</body>
-</html>
-Explanation:
-
-This solution creates a navigation bar with 5 links (Home, About Us, Contact, Blog, Login).
-CSS is used to style the navigation bar, ensuring that the links change color on hover.
-2. Create a Div Centered with an Image and Paragraph Similar to the Image Mentioned
-Solution:
-
-HTML and CSS Code:
-
-html
-Copy code
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Div</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        .card {
-            background-color: #fff;
-            border: 1px solid #ccc;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            border-radius: 10px;
-        }
-        .card img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .card p {
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
-
-<div class="card">
-    <img src="https://via.placeholder.com/300" alt="Card Image">
-    <p>Course Name: PW Skills full stack web development</p>
-</div>
-
-</body>
-</html>
-The div contains an image and a paragraph, styled to match the example.
-3. Create a Navigation Bar Similar to Question 1, Using a Different Border Style for Each Navigation Item
-Solution:
-
-HTML and CSS Code:
-
-html
-Copy code
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar with Borders</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-        }
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            border-right: 1px solid white;
-        }
-        .navbar a:last-child {
-            border-right: none;
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .navbar a:nth-child(1) {
-            border-bottom: 3px solid red;
-        }
-        .navbar a:nth-child(2) {
-            border-top: 3px dotted blue;
-        }
-        .navbar a:nth-child(3) {
-            border-left: 3px dashed green;
-        }
-        .navbar a:nth-child(4) {
-            border-right: 3px double yellow;
-        }
-        .navbar a:nth-child(5) {
-            border-top: 3px groove orange;
-        }
-    </style>
-</head>
-<body>
-
-<div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact</a>
-    <a href="#blog">Blog</a>
-    <a href="#login">Login</a>
-</div>
-
-</body>
-</html>
-Explanation:
-
-This solution uses different border styles for each navigation item, such as solid, dotted, dashed, double, and groove.
-4. Create a Simple Webpage with an Image and Make the Image Circular Using Border-Radius
-Solution:
-
-HTML and CSS Code:
-
-html
-Copy code
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circular Image</title>
-    <style>
-        .image-container {
-            text-align: center;
-            margin-top: 50px;
-        }
-        .image-container img {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-        }
-    </style>
-</head>
-<body>
-
-<div class="image-container">
-    <img src="https://via.placeholder.com/200" alt="Circular Image">
-</div>
-
-</body>
-</html>
-Explanation:
-
-The image is styled to be circular using border-radius: 50%.
 5. Create a Simple Blog Website About Google Fonts with Specific Fonts for Heading and Paragraph
 Solution:
 
-HTML and CSS Code:
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -434,10 +228,11 @@ HTML and CSS Code:
 </html>
 6. Create a Simple Website as Mentioned in the Below Image Using Provided Assets
 Solution:
+```
 
 6. Create a Simple Website as Mentioned in the Below Image Using Provided Assets
 Solution:
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -485,8 +280,85 @@ Solution:
 
 </body>
 </html>
-8. Create a Simple List of Items
+```
+7. Create a Simple Webpage with a Semi-Transparent Card
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Card</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
 
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover {
+    opacity: 0.6;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/54cca3cf-17ac-4fb6-a705-97644352efcf.png" alt="Web Development">
+        <div class="content">
+            <h3>WEB DEVELOPMENT</h3>
+            <p>Course Name: PW SKills web development</p>
+        </div>
+    </div>
+</body>
+</html>
+
+```
+
+
+8. Create a Simple List of Items
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -535,3 +407,4 @@ Solution:
 </body>
 </html>
 
+```
